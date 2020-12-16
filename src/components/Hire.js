@@ -65,10 +65,15 @@ function Hire()
 
 					
 								
-						<Col  xs={6} md={4} className="text-center  ">
+						<Col xs={6} md={4} style={{
+							width: "100px",
+							height:"400px"
+							
+							
+						  }} className="">
 							<div class="card">
 								<div className="w-25 mx-auto">
-									<img class="card-img-top p-2" width = "120%" src={nome.pic} alt="Card cap"/>
+									<img class="card-img-top p-2" width = "80%" src={nome.pic} alt="Card cap"/>
 								</div>
 								<div class="card-body">
 								<h5 class="card-title">{nome.name}</h5>
