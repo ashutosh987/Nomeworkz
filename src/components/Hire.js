@@ -36,7 +36,7 @@ function Hire()
 		<div  >
 			<h5>
             <Navbar className="w-100 pr-5 px-5 navigation shadow-lg" expand="lg" static>
-              <Navbar.Brand className="ml-5  d-inline-block align-top"  href="/" ><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
+              <Navbar.Brand className="ml-5 px-5 d-inline-block align-top"  href="/" ><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav backcolor" />
               <Navbar.Collapse id="basic-navbar-nav backcolor">
                 <Nav className="ml-auto backcolor">

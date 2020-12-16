@@ -163,7 +163,11 @@ function Form()
 									<div className="col-md-8 col-sm-8">
 										<h2 className="card-title">Name: {params.name}</h2>
 										<p className="card-text"><strong>Overall Rating: </strong>
-											<i className="icofont-star"></i>
+										<i class="icofont-star" style={{color : '#ffd700'}} ></i>
+							<i class="icofont-star"style={{color : '#ffd700'}}></i>
+							<i class="icofont-star"style={{color : '#ffd700'}}></i>
+							<i class="icofont-star"style={{color : '#ffd700'}}></i>
+							<i class="icofont-star"style={{color : '#ffd700'}}></i>
 										</p>
 										<p><strong>Service Offered: </strong>
 											<span className="badge bg-primary mx-1">Paper</span> 
@@ -197,20 +201,15 @@ function Form()
 										</div>
 										<div className="form-group">
 											<label for="exampleFormControlSelect1">Number of Pages (One page will have 500 words approx.)</label>
-											<select name = "pages" className="form-control" id="exampleFormControlSelect1">
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>More than 4</option>
-											</select>
+											<input type="Number" name = "pages" className="form-control" id="exampleFormControlSelect1" />
+											
 										</div>
 										<hr/>
 										<div className="form-group">
 											<label for="exampleFormControlTextarea1">Description about Homework</label>
 											<textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
 										</div>
-										okNo		<div className="form-group">
+												<div className="form-group">
 											<label for="exampleFormControlTextarea1">Special Notes</label>
 											<textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="spnotes"></textarea>
 										</div>

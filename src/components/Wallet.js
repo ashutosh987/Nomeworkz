@@ -102,7 +102,7 @@ function Wallet()
 		    <p class="card-text">Here you can view your balance.</p>
 		  </div>
 		  <ul class="list-group list-group-flush">
-		    <li class="list-group-item">Current Balance :- {localStorage.wallet}</li>
+		    <li class="list-group-item">Current Balance :- {"$"}{localStorage.wallet}</li>
 		  </ul>
 		  <div class="card-body">
 		    <h5 class="card-title">Add amount</h5>

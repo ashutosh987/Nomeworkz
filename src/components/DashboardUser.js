@@ -75,7 +75,7 @@ function Dashboard()
         <div >
             
 			<Navbar className="w-100 px-5 navigation shadow-lg" expand="lg" static>
-			  <Navbar.Brand className="ml-5" href="/"><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
+			  <Navbar.Brand className="ml-5 " href="/"><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
 			  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 			  <Navbar.Collapse id="basic-navbar-nav">
                   <h5>
@@ -104,7 +104,7 @@ function Dashboard()
 			</Navbar>
            
 		</div>
-        
+
 		<div className="" >
             <div className="row back m-0 w-100" style={{backgroundImage : `url("back.webp")`}}>
                 <div className="col-6 p-sm-5" style={{marginTop : '15px'}}>
@@ -117,7 +117,7 @@ function Dashboard()
             </div>
             
            
-            <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className="row " >
+            <div style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className="row " >
                 <div className="col-lg-2 col-md-1 col-sm-0"></div>
                 <div className="col-lg-8 col-md-10 col-sm-12 text-center px-5">
                 <div className = "py-4" id="about">
@@ -127,10 +127,10 @@ function Dashboard()
                             We all know that life doesn't always go as planned and that at times, we've struggled to hit deadlines. Whether you are a student athlete, working to put yourself through college, have a presentation at your office, or are a parent that simply wants to give their child a little added support, we sometimes could use a little help. Nomeworkz online writing service was created as a tool to help students with their academic performance! We have some of the most skilled writers to assist in creating original, custom papers for any educational level.
                         </p>
                     </div>
-                    <div className = "py-4" style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
+                    <div className = "py-4" style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
                         <h1><b>What is NomeWorkz?</b></h1>
                         <div className="videoDiv py-4">
-                            <video style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}className="video" controls>
+                            <video style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}className="video" controls>
                                 <source src="https://video.wixstatic.com/video/c3a0d6_3432ad8f474e4909ba2b52dd4bb2072d/480p/mp4/file.mp4" type="video/mp4"/>
                             </video>
                             <br></br>
@@ -141,7 +141,7 @@ function Dashboard()
                     </div>
 
 
-                    <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className = "row" >
+                    <div style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className = "row" >
                         
                         <div className="row mt-5">
                             <div className="col px-0">
@@ -230,7 +230,7 @@ function Dashboard()
 
                     <div  id="services" className = "py-4">
                         <h1><b>Services</b></h1>
-                        <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
+                        <div style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
                         <p>Our professional team of experts in various subjects can handle any academic essay including, but not limited to:</p>
                        </div>
                         <div className="row">
@@ -297,7 +297,7 @@ function Dashboard()
                                     </Card.Text>
                                 </Card>
                             </div>
-                            <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className="col-lg-3 col-md-6 col-sm-12">
+                            <div style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className="col-lg-3 col-md-6 col-sm-12">
                                 <Card className="Card bg-transparent m-1">
                                     <Card.Img className="" variant="top"style={{width : '70%'}} src="https://static.wixstatic.com/media/c3a0d6_4e876ff152ca4e7b9fe9e25a3a3bf1b0~mv2.png/v1/fill/w_139,h_139,al_c,q_85,usm_0.66_1.00_0.01/Icon%205.webp" />
                                     <Card.Text>
@@ -323,14 +323,14 @@ function Dashboard()
                             </div>
                         </div>
                     </div>
-                    <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}id="faq">
+                    <div style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}id="faq">
                         <h1>FAQs</h1>
-                        <div className="faq m-3" style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
+                        <div className="faq m-3" style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
                             <Faq data={data} styles={styles} config={config} />
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}className="col-lg-2 col-md-1 col-sm-0"></div>
+                <div style={{backgroundImage : `url("https://static.wixstatic.com/media/0af80c_fc003eb58ee34840ad3693af80889fcf~mv2.png/v1/fill/w_560,h_272,al_c,q_85,usm_0.66_1.00_0.01/SeekPng_com_raindrop-png_4823332.webp")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}className="col-lg-2 col-md-1 col-sm-0"></div>
             </div>
         </div>
 			<div id="contact" className="mt-5 px-5 pt-3 text-center">

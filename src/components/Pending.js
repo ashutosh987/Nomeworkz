@@ -12,8 +12,8 @@ function Pending(props){
                 <div>   <Row>
                     <Col>Nome </Col>
                     <Col>Price</Col>
-                    <Col>homeworkLevel</Col>
-                    <Col>status</Col>
+                    <Col>Homework Level</Col>
+                    <Col>Status</Col>
                     
                          </Row>
                          <hr></hr>
@@ -25,7 +25,7 @@ function Pending(props){
                     <div>
                         <Row>
                     <Col>{val.gnomeNickName}</Col>
-                    <Col>{val.price}</Col>
+                    <Col>{"$"}{val.price}</Col>
                     <Col>{val.homeworkLevel}</Col>
                     <Col>Not completed</Col>
                          </Row>

@@ -99,7 +99,7 @@ function NomeAccount()
 
                 
 
-                <Form.Row>
+                {/* <Form.Row>
                     <Form.Group as={Col} controlId="formHorizontalEmail">
                     <Form.Label>Contact Email</Form.Label>
                     <Form.Control />
@@ -110,7 +110,7 @@ function NomeAccount()
                     <Form.Control type="name"  />
                     </Form.Group>
 
-                </Form.Row>
+                </Form.Row> */}
 
                 
 
@@ -173,9 +173,9 @@ function NomeAccount()
 
                 </Jumbotron>
                 <Button variant="outline-primary" onClick = {()=>{setcheck(1)}} active = {check===1}  >Account</Button>{' '}
-                <Button variant="outline-secondary"onClick = {()=>{setcheck(2)}} active = {check===2} >Left Task</Button>{' '}
-                <Button variant="outline-success"onClick = {()=>{setcheck(3)}} active = {check===3} >Completed Task</Button>{' '}
-                </Container>
+                <Button variant="outline-primary"onClick = {()=>{setcheck(2)}} active = {check===2} >Pending Task</Button>{' '}
+                <Button variant="outline-primary"onClick = {()=>{setcheck(3)}} active = {check===3} >Completed Task</Button>{' '}
+                
                 
 
                 <Container className = "white">
@@ -186,6 +186,7 @@ function NomeAccount()
 
                 {check===3? <Completed orderArray = {orderArray} /> : null}
            
+                </Container>
                 </Container>
                 
                 
