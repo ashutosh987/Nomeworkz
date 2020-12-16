@@ -34,28 +34,38 @@ function Hire()
 	return(
 		<>
 		<div  >
-            <Navbar className="w-100 px-5 navigation shadow-lg" expand="lg" static>
-              <Navbar.Brand className="ml-5  d-inline-block align-top" ><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
+			<h5>
+            <Navbar className="w-100 pr-5 px-5 navigation shadow-lg" expand="lg" static>
+              <Navbar.Brand className="ml-5  d-inline-block align-top"  href="/" ><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav backcolor" />
               <Navbar.Collapse id="basic-navbar-nav backcolor">
                 <Nav className="ml-auto backcolor">
                   {/* <Nav.Link className="px-5" href="/about" active>Home</Nav.Link> */}
-                  <Nav.Link className="mx-4  align-self-center " href="/" ><b >Home</b></Nav.Link>
-                  <Nav.Link className="mx-4  align-self-center px-3" href="#about" ><b>About us</b></Nav.Link>
-                  <Nav.Link className="mx-4  align-self-center px-3" href="#services" ><b>Services</b></Nav.Link>
-                  <Nav.Link className="mx-4  align-self-center px-3" href="#faq" ><b>FAQ's</b></Nav.Link>
-                  <Nav.Link className="mx-4  align-self-center pr-5 mr-5" href="#contact" ><b>Contact us</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center " href="/" active ><b >Home</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center px-3" href="/#about" active ><b>About us</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center px-3" href="/#services"  active><b>Services</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center px-3" href="/#faq" active><b>FAQ's</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center pr-5 mr-5" href="/#contact" active><b>Contact us</b></Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
-       </div>
+			</h5>
+			</div>
 		<Container>
-		<Row   >
-			{
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
+			
+		<Row >
+		
+			{ 
 				nomesArray.map(nome => {
 					return(	
+
+					
 								
-						<Col style={{marginTop : '30px'}}  xs={6} md={4} className="text-center  p-5">
+						<Col  xs={6} md={4} className="text-center  ">
 							<div class="card">
 								<div className="w-25 mx-auto">
 									<img class="card-img-top p-2" width = "120%" src={nome.pic} alt="Card cap"/>
@@ -86,8 +96,10 @@ function Hire()
 					)					
 				})
 			}
+			
 		</Row>	
 		</Container>
+		
 	
 		</>
 		);

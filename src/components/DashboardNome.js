@@ -50,6 +50,7 @@ function Dashboard()
 			  <Navbar.Brand className="ml-5" href="/"><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
 			  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 			  <Navbar.Collapse id="basic-navbar-nav">
+              <h5>
 			    <Nav className="ml-auto">
 				  {/* <Nav.Link className="px-5" href="/about" active>Home</Nav.Link> */}
 				  <Nav.Link className="mx-4 justify-content-center align-self-center" href="/dashboard-nome" active><b>Home</b></Nav.Link>
@@ -70,6 +71,7 @@ function Dashboard()
 				</NavDropdown>
 			      
 			    </Nav>
+                </h5>
 			  </Navbar.Collapse>
 			</Navbar>
 		</div>
@@ -83,28 +85,33 @@ function Dashboard()
                     
                 </div>
             </div>
-            <div  className="row " >
+            
+            <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className="row " >
                 <div className="col-lg-2 col-md-1 col-sm-0"></div>
                 <div className="col-lg-8 col-md-10 col-sm-12 text-center px-5">
-                    <div className = "py-4" id="about">
+                <div className = "py-4" id="about">
                         <h1><b>The Essay Writing You Can Trust</b></h1>
                         <br/>
                         <p>
                             We all know that life doesn't always go as planned and that at times, we've struggled to hit deadlines. Whether you are a student athlete, working to put yourself through college, have a presentation at your office, or are a parent that simply wants to give their child a little added support, we sometimes could use a little help. Nomeworkz online writing service was created as a tool to help students with their academic performance! We have some of the most skilled writers to assist in creating original, custom papers for any educational level.
                         </p>
                     </div>
-                    <div className = "py-4">
+                    <div className = "py-4" style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
                         <h1><b>What is NomeWorkz?</b></h1>
                         <div className="videoDiv py-4">
-                            <video className="video" controls>
+                            <video style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}className="video" controls>
                                 <source src="https://video.wixstatic.com/video/c3a0d6_3432ad8f474e4909ba2b52dd4bb2072d/480p/mp4/file.mp4" type="video/mp4"/>
                             </video>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <h1><b>How it Works?</b></h1>
                         </div>
                     </div>
-                   
 
-                    <div className = "row">
-                        <h1><b>How it Works?</b></h1>
+
+                    <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className = "row" >
+                        
                         <div className="row mt-5">
                             <div className="col px-0">
                                 <Card className="Card bg-transparent">
@@ -190,11 +197,13 @@ function Dashboard()
                     
 
 
-                    <div id="services" className = "py-4">
+                    <div  id="services" className = "py-4">
                         <h1><b>Services</b></h1>
+                        <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
                         <p>Our professional team of experts in various subjects can handle any academic essay including, but not limited to:</p>
+                       </div>
                         <div className="row">
-                            <div className="col-lg-4 col-md-6 col-sm-12">
+                            <div  className="col-lg-4 col-md-6 col-sm-12">
                                 <Card className="Card bg-transparent pl-5 py-3 m-1">
                                     <Card.Img className="" variant="top" style={{width : '70%'}} src="https://static.wixstatic.com/media/c3a0d6_600b03ec5f2c4dd992bc09ed4f5bf0ab~mv2.png/v1/fill/w_135,h_135,al_c,q_85,usm_0.66_1.00_0.01/Geography%20Icon.webp" />
                                     <Card.Text>
@@ -248,7 +257,7 @@ function Dashboard()
                             <div className="col-lg-3 col-md-6 col-sm-12">
                                 <Card className="Card bg-transparent m-1">
                                     <Card.Img className="" variant="top" style={{width : '70%'}}src="https://static.wixstatic.com/media/c3a0d6_a48aa399716f44ec9f1068673ce5180a~mv2.png/v1/fill/w_138,h_138,al_c,q_85,usm_0.66_1.00_0.01/Icon%203.webp" />
-                                    <Card.Text>
+                                    <Card.Text >
                                         <p className="m-2">
                                             <b>
                                                 Chemistry
@@ -257,7 +266,7 @@ function Dashboard()
                                     </Card.Text>
                                 </Card>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}} className="col-lg-3 col-md-6 col-sm-12">
                                 <Card className="Card bg-transparent m-1">
                                     <Card.Img className="" variant="top"style={{width : '70%'}} src="https://static.wixstatic.com/media/c3a0d6_4e876ff152ca4e7b9fe9e25a3a3bf1b0~mv2.png/v1/fill/w_139,h_139,al_c,q_85,usm_0.66_1.00_0.01/Icon%205.webp" />
                                     <Card.Text>
@@ -283,14 +292,14 @@ function Dashboard()
                             </div>
                         </div>
                     </div>
-                    <div id="faq">
+                    <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}id="faq">
                         <h1>FAQs</h1>
-                        <div className="faq m-3">
+                        <div className="faq m-3" style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}>
                             <Faq data={data} styles={styles} config={config} />
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-2 col-md-1 col-sm-0"></div>
+                <div style={{backgroundImage : `url("https://freepngimg.com/thumb/cloud/13-cloud-png-image-thumb.png")`,backgroundRepeat:"no-repeat",position:"relative",overflow:"visible"}}className="col-lg-2 col-md-1 col-sm-0"></div>
             </div>
         </div>
 			<div id="contact" className="mt-5 px-5 pt-3 text-center">

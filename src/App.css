@@ -58,7 +58,7 @@
 }
 
 .navigation{
-  position:absolute;
+  position: relative;;
   width : 100%;
   background-color:#DBF9FF;
   height: 10vh;
@@ -139,6 +139,14 @@ form {
   -webkit-transform: rotate(-45deg);
 }
 .bgcolor{
-  background-color: #0318d8;
+  background-color: #2e3dc4;
+  
+}
+.navbar-fixed {
+  overflow:scroll;
+ 
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 

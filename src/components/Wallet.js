@@ -1,6 +1,6 @@
 import StripeCheckout from "react-stripe-checkout";
 import { useState } from "react"
-
+import { Nav, Navbar ,NavDropdown,Image} from "react-bootstrap";
 const stripe = require("stripe")("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");
 
 async function handleToken(token,amount)
@@ -76,6 +76,26 @@ function Wallet()
 		</>
 	}
 	return(
+		<>
+		<div  >
+			<h5>
+            <Navbar className="w-100 pr-5 px-5 navigation shadow-lg" expand="lg" static>
+              <Navbar.Brand className="ml-5  d-inline-block align-top"  href="/" ><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav backcolor" />
+              <Navbar.Collapse id="basic-navbar-nav backcolor">
+                <Nav className="ml-auto backcolor">
+                  {/* <Nav.Link className="px-5" href="/about" active>Home</Nav.Link> */}
+                  <Nav.Link className="mx-4  align-self-center " href="/" active ><b >Home</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center px-3" href="/#about" active ><b>About us</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center px-3" href="/#services"  active><b>Services</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center px-3" href="/#faq" active><b>FAQ's</b></Nav.Link>
+                  <Nav.Link className="mx-4  align-self-center pr-5 mr-5" href="/#contact" active><b>Contact us</b></Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+			</h5>
+			</div>
+
 		<div class="card p-5 m-5">
 		  <div class="card-body">
 		    <h5 class="card-title">Wallet</h5>
@@ -94,6 +114,7 @@ function Wallet()
 		  </div>
 		  {payDiv}
 		</div>
+		</>
 		);
 }
 

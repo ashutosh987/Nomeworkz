@@ -133,6 +133,7 @@ function NomeAccount()
 			  <Navbar.Brand className="ml-5" href="/"><img width="180" alt="logo" src="logo.webp"/></Navbar.Brand>
 			  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 			  <Navbar.Collapse id="basic-navbar-nav">
+                  <h5>
 			    <Nav className="ml-auto">
 				  {/* <Nav.Link className="px-5" href="/about" active>Home</Nav.Link> */}
 				  <Nav.Link className="mx-4 justify-content-center align-self-center" href="/dashboard-nome" active><b>Home</b></Nav.Link>
@@ -153,18 +154,20 @@ function NomeAccount()
 				</NavDropdown>
 			      
 			    </Nav>
+                </h5>
 			  </Navbar.Collapse>
 			</Navbar>
 		</div>
             <Container className = "white " >
 				<Jumbotron fluid className = "white bgcolor">
-                <Container>
-                    
-                    <p>
+                <Container style={{marginTop : '100px'}}>
+                    <h1>
+                    <p style={{color: 'white'}}>
                    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/512px-Circle-icons-profile.svg.png' width = {120} roundedCircle />
                     
-                    {"     "}{nome}
+                    {"     "}{" "}<b>{localStorage.name}</b>
                     </p>
+                    </h1>
                     
                 </Container>
 
