@@ -96,7 +96,7 @@ function Home_part()
 
     return(
         <>
-        <div>
+        <div >
             <Navbar className="w-100 px-5 navigation shadow-lg" expand="lg" static>
               <Navbar.Brand className="ml-5 px-5 d-inline-block align-top" href="/"><img width="220" alt="logo" src="logo.webp"/></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav backcolor" />

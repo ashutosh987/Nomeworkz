@@ -6,6 +6,8 @@ import zxcvbn from "zxcvbn"
 import firebase from "firebase"
 import db from "./Database";
 
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
 const validator = require("validator");
 
 const PasswordStr = props => {
@@ -132,6 +134,19 @@ function SignUpForm({
           onChange={onChange}
           errorText={errors.pwconfirm}
         />
+
+        <FormControlLabel
+        control={<Checkbox checked={user.type0} onChange={onChange} name="type0" />}
+        label="Paper"
+      />
+      <FormControlLabel
+        control={<Checkbox checked={user.type1} onChange={onChange} name="type1" />}
+        label="Ppt"
+      />
+      <FormControlLabel
+        control={<Checkbox checked={user.type2} onChange={onChange} name="type2" />}
+        label="Resume"
+      />
         <br />
         <RaisedButton
           className="signUpSubmit"
@@ -241,7 +256,10 @@ class SignupNome extends Component {
         username: "",
         email: "",
         password: "",
-        pwconfirm: ""
+        pwconfirm: "",
+        type0:true,
+        type1:false,
+        type2:false,
       },
       btnTxt: "show",
       type: "password",
@@ -253,6 +271,21 @@ class SignupNome extends Component {
     this.submitSignup = this.submitSignup.bind(this);
     this.validateForm = this.validateForm.bind(this);
     this.pwHandleChange = this.pwHandleChange.bind(this);
+    this.checkForm = this.checkForm.bind(this);
+  }
+
+  checkForm(event) {
+    const field = event.target.name;
+    const user = this.state.user;
+    user[field] = event.target.value;
+
+    this.setState({
+      
+      user
+    });
+
+
+
   }
 
   handleChange(event) {
@@ -261,6 +294,15 @@ class SignupNome extends Component {
     user[field] = event.target.value;
 
     this.setState({
+      
+      user
+    });
+
+
+    user[field] = event.target.checked;
+
+    this.setState({
+      
       user
     });
   }
@@ -291,7 +333,7 @@ class SignupNome extends Component {
   }
 
   submitSignup(user) {
-    var params = { username: user.usr, password: user.pw, email: user.email,accnum : user.accnum,ifsc:user.ifsc, phone:user.phone,info : user.info };
+    var params = { type0:user.type0 , type1:user.type1,type2:user.type2, username: user.usr, password: user.pw, email: user.email,accnum : user.accnum,ifsc:user.ifsc, phone:user.phone,info : user.info };
       firebase.auth().createUserWithEmailAndPassword(params.email, params.password)
       .then((user) => {
         user.user.sendEmailVerification();
@@ -312,7 +354,7 @@ class SignupNome extends Component {
             phoneVerified : false,
             rating:0,
             selectedGnomeFace:0,
-            services:[],
+            services:[params.type0,params.type1,params.type2],
             uid : user.user.uid,
           }
         ).then((user)=>{

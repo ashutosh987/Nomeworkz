@@ -3,39 +3,62 @@ import { useState } from "react"
 import { Nav, Navbar ,NavDropdown,Image} from "react-bootstrap";
 const stripe = require("stripe")("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");
 
-async function handleToken(token,amount)
-{
-	console.log(token);
-	let status;
-	try{
-		console.log(token.email,token.id);
-		let customer = await stripe.customers.create({
-			email: token.email,
-			source: token.id
-		});
-		console.log("here1");
-		const idempotency_key = 123;
-		const charge = await stripe.charges.create(
-			{
-				amount: amount,
-				currency: "usd",
-				customer: customer.id,
-				receipt_email: token.email,
-				description: `Paid an amount of ${amount}.`,
-			},
-			{
-				idempotency_key
-			}
-		);
-		console.log("here2");
-		status = "success";
-		console.log(status);
-	} 
-	catch(error){
-		console.log(`error : ${error}`);
-		status = "failure";
-	}
-}
+// async function handleToken(token,amount)
+// {
+// 	console.log(token);
+// 	let status;
+// 	try{
+// 		console.log(token.email,token.id);
+// 		let customer = await stripe.customers.create({
+// 			email: token.email,
+// 			source: token.id
+// 		});
+// 		console.log("here1");
+// 		const idempotency_key = 123;
+// 		const charge = await stripe.charges.create(
+// 			{
+// 				amount: amount,
+// 				currency: "usd",
+// 				customer: customer.id,
+// 				receipt_email: token.email,
+// 				description: `Paid an amount of ${amount}.`,
+// 			},
+// 			{
+// 				idempotency_key
+// 			}
+// 		);
+// 		console.log("here2");
+// 		status = "success";
+// 		console.log(status);
+// 	} 
+// 	catch(error){
+// 		console.log(`error : ${error}`);
+// 		status = "failure";
+// 	}
+// }
+
+// const onToken = (amount, description) => (token, args) =>
+//   axios.post('/save-stripe-token',
+//     {
+//       description,
+//       source: token.id,
+//       currency: 'USD',
+//       amount: amount,
+//       metadata: args
+//     })
+//     .then()
+//     .catch();
+ const onToken = (token) => {
+	 console.log(token)
+    fetch('/save-stripe-token', {
+      method: 'POST',
+      body: JSON.stringify(token),
+    }).then(response => {
+      response.json().then(data => {
+        alert(`We are in business, ${data.email}`);
+      });
+    });
+  }
 
 
 function Wallet()
@@ -66,8 +89,8 @@ function Wallet()
 		<>
 		  <div class="card-body">
 		    <StripeCheckout 
-		    	stripeKey="pk_live_XaGBwvF5ibvmEAEIuK4z7aKj0033HZWVB0"
-		    	token={handleToken}
+		    	stripeKey="pk_test_45Uqb9W1AibNl5ZgSFqOdV0J00efJSKxCN"
+		    	token={onToken}
 		    	email={localStorage.email}
 		    	allowRememberMe={false}
 		    	amount={amount}

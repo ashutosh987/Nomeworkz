@@ -1,7 +1,9 @@
 import { useState } from "react"
 import { useParams } from "react-router-dom"
 import db from "./Database";
+
 import { v1 } from "uuid";
+
 
 function Form()
 {
@@ -18,6 +20,7 @@ function Form()
 	var dl;
 	var description;
 	var spnotes;
+	var file;
 
 	let booker = ()=>{
 		let info = {
@@ -45,6 +48,7 @@ function Form()
 	        	wallet : (localStorage.wallet-amount).toFixed(2),
 	        }
 	        ).then((data)=>{
+
 	          db.collection("homeworks").doc(v1()).set(
 	          	info
 		        ).then((inf)=>{
@@ -76,6 +80,9 @@ function Form()
 		pages = e.target.pages.value;
 		type = e.target.type.value;
 		dl = e.target.date.value;
+		file = e.target.file.files[0];
+		console.log(file.name)
+		
 		description = e.target.description.value;
 		spnotes = e.target.spnotes.value;
 		
@@ -186,7 +193,7 @@ function Form()
 									<form className="ml-3" onSubmit={(e) => submitHandler(e)}>
 										<div className="form-group">
 											<label for="exampleFormControlFile1">Upload Image and Reference Files (10mb Max)</label>
-											<input type="file" className="form-control-file" id="exampleFormControlFile1" />
+											<input name = "file" type="file" className="form-control-file" id="exampleFormControlFile1" />
 											<p>If you have larger files then upload files on google drive and share the link in description.</p>
 										</div>
 										<hr/>
@@ -199,6 +206,24 @@ function Form()
 											<option>Ph.D.</option>
 											</select>
 										</div>
+										{/* <div className="form-group">
+											<label for="exampleFormControlSelect1">Services</label>
+											<select name = "type" className="form-control" id="exampleFormControlSelect1">
+											<option>High School</option>
+											<option>Undergraduate</option>
+											<option>Graduate</option>
+											<option>Ph.D.</option>
+											</select>
+										</div>
+										<div className="form-group">
+											<label for="exampleFormControlSelect1">SubServices</label>
+											<select name = "type" className="form-control" id="exampleFormControlSelect1">
+											<option>High School</option>
+											<option>Undergraduate</option>
+											<option>Graduate</option>
+											<option>Ph.D.</option>
+											</select>
+										</div> */}
 										<div className="form-group">
 											<label for="exampleFormControlSelect1">Number of Pages (One page will have 500 words approx.)</label>
 											<input type="Number" name = "pages" className="form-control" id="exampleFormControlSelect1" />

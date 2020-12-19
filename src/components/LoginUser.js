@@ -27,6 +27,8 @@ function SignUpForm({
 
       <form onSubmit={onSubmit}>
         <TextField
+        id="outlined-email"
+      
           name="email"
           floatingLabelText="email"
           value={user.email}
@@ -35,6 +37,7 @@ function SignUpForm({
         />
         <TextField
           type={type}
+        
           name="password"
           floatingLabelText="password"
           value={user.password}
